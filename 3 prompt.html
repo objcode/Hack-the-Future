@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<script language="javascript" 
+				src="http://code.jquery.com/jquery-1.6.js">
+		</script>
+		<title>Pong</title>
+	</head>
+	<body>
+		<!-- Do not edit this -->
+		<div id="gameinfo">
+			<span id="player1-info">
+				<span id="player1-name" class="name">
+					Player 1
+				</span>
+				<span id="player1-score">
+					0
+				</span>
+			</span>
+			<span id="player2-info">
+				<span id="player2-name" class="name">
+					Player 2
+				</span>
+				<span id="player2-score">
+					0
+				</span>
+			</span>
+		</div>
+		<hr>
+		<div class="gamearea">
+			<!-- left blank -->
+		</div>
+
+		<!-- Put your code inside this script tag -->
+		<script type="text/javascript">
+			return;
+			// Demonstrate CLASS and ID lookup
+			$(".name").after(':')
+			$("#gameinfo").css('width', '500px');
+			$("#player2-info").css('float', 'right');
+			
+			//Show how to do prompt stuff
+			p1_name = prompt("What is player 1's name?");
+			$("#player1-name").html(p1_name);
+			p2_name = prompt("What is player 2's name?");
+			$("#player2-name").html(p2_name);
+		</script>
+	</body>
+</html>
