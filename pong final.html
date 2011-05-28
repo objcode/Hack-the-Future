@@ -141,18 +141,18 @@ if (ball_y > 489 || ball_y < 1) {
 gametick();
 
 $(document).keydown(function(e) {
-					       if(e.keyCode == 59) {
-					         p1_dy = 1.5;
+					       if(e.keyCode == 40) {
+					         p2_dy = 1.5;
 					       }
-					       if(e.keyCode == 65) {
-					         p1_dy = -1.5;
+					       if(e.keyCode == 38) {
+					         p2_dy = -1.5;
 					       }
 
 					       if(e.keyCode == 83) {
-					         p2_dy = 1.5;
+					         p1_dy = 1.5;
 					       }
-					       if(e.keyCode == 76) {
-					         p2_dy = -1.5;
+					       if(e.keyCode == 87) {
+					         p1_dy = -1.5;
 					       }
 });
 $(document).keyup(function(e) {
