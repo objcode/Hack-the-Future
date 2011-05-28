@@ -1,46 +1,46 @@
 <html>
-	<head>
-                <script language="javascript" src="jquery-1.6.1.min.js"></script>
-		<title>Pong</title>
-	</head>
-	<body>
-		<!-- Do not edit this -->
-		<div id="gameinfo">
-			<span id="player1-info">
-				<span id="player1-name" class="name">
-					Player 1
-				</span>
-				<span id="player1-score">
-					0
-				</span>
-			</span>
-			<span id="player2-info">
-				<span id="player2-name" class="name">
-					Player 2
-				</span>
-				<span id="player2-score">
-					0
-				</span>
-			</span>
-		</div>
-		<hr>
-		<div id="gamearea">
-			<!-- left blank -->
-		</div>
+  <head>
+    <script language="javascript" src="jquery-1.6.1.min.js"></script>
+    <title>Pong</title>
+  </head>
+  <body>
+    <!-- Do not edit this -->
+    <div id="gameinfo">
+      <span id="player1-info">
+        <span id="player1-name" class="name">
+          Player 1
+        </span>
+        <span id="player1-score">
+          0
+        </span>
+      </span>
+      <span id="player2-info">
+        <span id="player2-name" class="name">
+          Player 2
+        </span>
+        <span id="player2-score">
+          0
+        </span>
+      </span>
+    </div>
+    <hr>
+    <div id="gamearea">
+      <!-- left blank -->
+    </div>
 
-		<!-- Put your code inside this script tag -->
-		<script type="text/javascript">
-			// Demonstrate CLASS and ID lookup
-			$(".name").after(':')
-			$("#gameinfo").css('width', '500px');
-			$("#player2-info").css('float', 'right');
-			
-			//Show how to do prompt stuff
-			// this is the FIRST time they'll have seen variables
-			input = prompt("What is player 1's name?");
-			$("#player1-name").html(input);
-			input = prompt("What is player 2's name?");
-			$("#player2-name").html(input);
-		</script>
-	</body>
+    <!-- Put your code inside this script tag -->
+    <script type="text/javascript">
+      // Demonstrate CLASS and ID lookup
+      $(".name").after(':')
+      $("#gameinfo").css('width', '500px');
+      $("#player2-info").css('float', 'right');
+      
+      //Show how to do prompt stuff
+      // this is the FIRST time they'll have seen variables
+      input = prompt("What is player 1's name?");
+      $("#player1-name").html(input);
+      input = prompt("What is player 2's name?");
+      $("#player2-name").html(input);
+    </script>
+  </body>
 </html>
